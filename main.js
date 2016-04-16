@@ -39,7 +39,7 @@ contactStorage.write(contacts);
 
   // var $button = ("<button>").addClass('btn')
   var $button = $('<button>').addClass('btn edit').text('Edit');
-  var $btnDelete = $('<button>').addClass('btn Delete').text('Edit');
+  var $btnDelete = $('<button>').addClass('btn Delete').text('Delete');
   var $tr = $('<tr>');
   var $tdName = $('<td>').addClass('name');
   var $tdNumber = $('<td>').addClass('number');
@@ -87,7 +87,7 @@ function createRow(data){
   var address = $('<td>').text(data.address).appendTo(tableRow);
   var email = $('<td>').text(data.email).appendTo(tableRow);
  var $button = $('<button>').addClass('btn edit').text('Edit').appendTo(tableRow)
- var $btnDelete = $('<button>').addClass('btn Delete').text('Edit').appendTo(tableRow);
+ var $btnDelete = $('<button>').addClass('btn Delete').text('Delete').appendTo(tableRow);
   return tableRow;
 
 }
